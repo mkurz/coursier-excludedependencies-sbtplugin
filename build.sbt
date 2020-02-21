@@ -9,6 +9,8 @@ lazy val root = (project in file("."))
       "com.typesafe.play" %% "play-akka-http-server"
       // or:
       //ExclusionRule("com.typesafe.play", "play-akka-http-server_2.13")
+      // or:
+      //ExclusionRule("com.typesafe.play", "play-akka-http-server", "*", Vector(), CrossVersion.binary),
     )
   )
 
