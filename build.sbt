@@ -1,5 +1,6 @@
 lazy val root = (project in file("."))
   .enablePlugins(PlayWeb)
+  .disablePlugins(PlayLayoutPlugin)
   .settings(
     name := "coursier-excludeDependencies-sbtPlugin",
     version := "1.0-SNAPSHOT",
